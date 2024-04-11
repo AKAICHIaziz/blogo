@@ -25,6 +25,7 @@ export const authConfig = {
             const isOnAdminPanel = request.nextUrl?.pathname.startsWith("/admin");
             const isOnBlogPage = request.nextUrl?.pathname.startsWith("/blog");
             const isOnLoginPage = request.nextUrl?.pathname.startsWith("/login");
+            const isOnCreatePage = request.nextUrl?.pathname.startsWith("/create");
 
             // Only admin can reach the admin dashboard
 
@@ -34,6 +35,11 @@ export const authConfig = {
 
             // only athenticated users can reach the blog page
             if( isOnBlogPage && !user) {
+                return false
+            } 
+
+             // only athenticated users create posts
+             if( isOnCreatePage && !user) {
                 return false
             } 
 

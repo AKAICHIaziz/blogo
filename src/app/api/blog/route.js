@@ -14,14 +14,16 @@ export const GET = async (req) => {
     }
 }
 
-export const DELETE = async (req) => {
-    try {
-        connectToDb()
-        const posts = await Post.deleteOne({slug})
-        return NextResponse.json(posts)
+export const DELETE = async (request, { params }) => {
+    const { slug } = params;
 
-    } catch (error) {
-        console.log(error)
-        throw new Error("Failed to delete posts")
+    try {
+        connectToDb();
+
+        await Post.deleteOne({ slug });
+        return NextResponse.json("Post deleted");
+    } catch (err) {
+        console.log(err);
+        throw new Error("Failed to delete post!");
     }
-}
+};

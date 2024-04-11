@@ -1,8 +1,10 @@
-
+import "./loading.css"
 
 const loading = () => {
   return (
-    <div>loading</div>
+    <div className="body">
+      <div class="loader"></div>
+    </div>
   )
 }
 

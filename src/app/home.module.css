@@ -42,6 +42,7 @@
     filter: grayscale(1);
 }
 
+
 .imgContainer{
     flex: 1;
     position: relative;

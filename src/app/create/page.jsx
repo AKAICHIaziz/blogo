@@ -9,7 +9,7 @@ const page = async() => {
 
   return (
     <div>
-        <UserPostForm userId={session.user.id}/>
+        <UserPostForm userId={session?.user.id}/>
     </div>
   )
 }

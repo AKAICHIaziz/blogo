@@ -2,6 +2,7 @@ import Link from "next/link"
 import Links from "./links/Links"
 import styles from "./navbar.module.css"
 import { auth } from "@/lib/auth";
+import Image from "next/image"
 
 const Navbar = async () => {
 
@@ -9,9 +10,9 @@ const Navbar = async () => {
 
   return (
     <div className={styles.container}>
-      <Link href="/" className={styles.logo}>Logo</Link>
+      <Link href="/" className={styles.logo}><Image src="/blogger-logo.png" fill /></Link>
       <div>
-        <Links session={session}/>
+        <Links session={session}/> 
       </div>
     </div>
   )

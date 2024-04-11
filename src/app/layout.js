@@ -1,16 +1,16 @@
 import { Inter } from 'next/font/google'
 import './globals.css'
-import Navbar from '@/components/navbar/navbar'
+import Navbar from '@/components/navbar/Navbar'
 import Footer from '@/components/footer/Footer'
 
 const inter = Inter({ subsets: ['latin'] })
 
 export const metadata = {
   title: {
-    default: "Next.js 14 HomePage",
-    template: "%s | Next.js 14"
+    default: "Blogger",
+    template: "%s | Blogger"
   },
-  description: 'Next.js starter app',
+  description: 'Blog app',
 }
 
 export default function RootLayout({ children }) {
