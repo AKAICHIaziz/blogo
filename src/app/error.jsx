@@ -1,7 +1,13 @@
 "use client"
+
+import Link from 'next/link'
+
 const error = () => {
   return (
-    <div>error</div>
+    <div>
+      <h1>Internal server error</h1>
+      <Link src='/'>Go back</Link>
+    </div>
   )
 }
 
