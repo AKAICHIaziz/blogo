@@ -1,20 +1,20 @@
 import styles from "./home.module.css"
 import Image from "next/image"
+import Link from 'next/link'
 
 const Home = () => {
   return <div className={styles.container}>
 
     <div className={styles.textContainer}>
 
-      <h1 className={styles.title}>Creative Thoughts Agency.</h1>
+      <h1 className={styles.title}>Exploring Ideas, Inspiring Minds.</h1>
       <p className={styles.desc}>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit.
-        Nostrum esse, est repudiandae eaque nobis nulla qui, neque,
-        officiis harum eos expedita.
+      Welcome to Blog 216, a tunisian blog app where ideas come alive and minds are inspired.
+       Join our community and explore.
       </p>
       <div className={styles.buttons}>
-        <button className={styles.button}>Learn More</button>
-        <button className={styles.button}>Contact</button>
+        <button className={styles.button}><Link href="/about">Learn More</Link></button>
+        <button className={styles.button}><Link href="/contact">Contact</Link></button>
       </div>
       <div className={styles.brands}>
         <Image src="/brands.png" alt="" fill className={styles.brandImg} />
