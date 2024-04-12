@@ -59,7 +59,14 @@
         text-align: center;
     }
     .boxes {
-        flex-direction: column;
+        /* flex-direction: column; */
         gap: 50px;
+    }
+    .box h1 {
+        color: var(--btn);
+        font-size: 15px;
+    }
+    .box p {
+        font-size: 10px;
     }
 }
