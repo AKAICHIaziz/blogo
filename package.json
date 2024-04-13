@@ -9,6 +9,7 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@vercel/analytics": "^1.2.2",
     "bcryptjs": "^2.4.3",
     "lodash": "^4.17.21",
     "mongoose": "^8.0.0",
