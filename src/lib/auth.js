@@ -56,14 +56,13 @@ export const { handlers: { GET, POST }, auth, signIn, signOut } = NextAuth({
                     const user = await User.findOne({ email: profile.email })
                     if (!user) {
                         const newUser = new User({
-                            username: profile.username,
+                            username: profile.login,
                             email: profile.email,
-                            image: profile.avatar_url,
+                            img: profile.avatar_url,
                         })
 
                         await newUser.save()
                     }
-
                 }
                 catch (error) {
                     console.log(error)
