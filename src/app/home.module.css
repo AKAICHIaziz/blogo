@@ -40,10 +40,9 @@
 }
 
 .brands {
-    width: 400px;
+    width: 300px;
     height: 40px;
     position: relative;
-    filter: grayscale(1);
 }
 
 
@@ -63,14 +62,19 @@
     .buttons {
         justify-content: center;
     }
+    .brands {
+        align-self: center;
+    }
 }
 
 @media (max-width: 768px) {
+    .container{
+        height: calc(100vh-130px );
+    }
     .title {
-        font-size: 64px;
+        margin-top: 15px;
+        font-size: 50px;
     }
 
-    .brands {
-        width: 100%;
-    }
+    
 }

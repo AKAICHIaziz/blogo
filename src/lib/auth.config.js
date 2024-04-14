@@ -15,6 +15,7 @@ export const authConfig = {
         },
         async session({ session, token }) {
             if (token) {
+                session.user.username = token.email
                 session.user.id = token.id
                 session.user.isAdmin = token.isAdmin
             }

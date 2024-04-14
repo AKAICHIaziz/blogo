@@ -32,19 +32,26 @@ const links = [
 const Links = ({ session }) => {
   const [open, setOpen] = useState(false);
 
-
-  console.log(session?.user)
+  const name = () => {
+    const username = session?.user?.username
+    const i = username.indexOf('@')
+    const name = username.substring(0, i)
+    return name
+  }
+  
 
   return (
     <div className={styles.container}>
       <div className={styles.links}>
+        
         {links.map((link) => (
           <NavLink item={link} key={link.title} />
         ))}
         {session?.user ? (
           <>
-            <div className={styles.user}>{session.user?.isAdmin && <NavLink item={{ title: "Admin", path: "/admin" }} />}</div>
-            <form action={handleLogout}>
+            <div className={styles.user}>{session.user?.isAdmin && <NavLink item={{ title: "Admin Pannel", path: "/admin" }} />}</div>
+            <form action={handleLogout} className={styles.top_right}>
+              <span className={styles.username}>Welcome <b>{name()}</b>,</span>
               <button className={styles.logout}>Logout</button>
             </form>
           </>

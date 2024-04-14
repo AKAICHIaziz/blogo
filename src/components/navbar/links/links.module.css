@@ -11,14 +11,25 @@
 }
 
 .user {
-    margin-left: 100px;
-    margin-right: 40px;
     font-size: 18px;
 }
 
 .mobileLinks,
 .menuButton {
     display: none;
+}
+
+.top_right{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    margin-left: 20px;
+}
+
+.username {
+    color: var(--btn);
 }
 
 

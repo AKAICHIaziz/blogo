@@ -11,7 +11,7 @@ export const addPost = async (prevState, formData) => {
     const { title, desc,img, slug, userId } = Object.fromEntries(formData)
 
     try {
-        connectToDb()
+        connectToDb() 
         const newPost = new Post({
             title,
             desc,

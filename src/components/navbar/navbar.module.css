@@ -18,3 +18,9 @@
     transition: transform .3s ease;
     transform: scale(1.2);
 }
+
+@media (max-width: 1024px) {
+    .logo {
+        display: none;
+    }
+}

@@ -18,6 +18,7 @@ const ContactPage = () => {
       </div>
 
       <div className={styles.formContainer}>
+        <h1 className={styles.title}>Get in touch</h1>
         <form action="" className={styles.form}>
           <input type="text" placeholder="Name and Surname" />
           <input type="text" placeholder="Email Adress" />
