@@ -8,10 +8,10 @@ import bcrypt from "bcryptjs"
 
 export const addPost = async (prevState, formData) => {
 
-    const { title, desc,img, slug, userId } = Object.fromEntries(formData)
+    const { title, desc, img, slug, userId } = Object.fromEntries(formData)
 
     try {
-        connectToDb() 
+        connectToDb()
         const newPost = new Post({
             title,
             desc,
@@ -31,7 +31,7 @@ export const addPost = async (prevState, formData) => {
 
 export const addPostUser = async (prevState, formData) => {
 
-    const { title, desc,img, slug, userId } = Object.fromEntries(formData)
+    const { title, desc, img, slug, userId } = Object.fromEntries(formData)
 
     try {
         connectToDb()
