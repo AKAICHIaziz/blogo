@@ -47,6 +47,7 @@ export const { handlers: { GET, POST }, auth, signIn, signOut } = NextAuth({
             }
         })
     ],
+    secret: process.env.NEXTAUTH_SECRET,
     callbacks: {
         async signIn({ user, account, profile }) {
 
