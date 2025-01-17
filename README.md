@@ -1,28 +1,28 @@
-## Getting Started
+# Blog Web Application
 
-First, install the dependencies:
+This is a blog web application built with **Next.js 14** and **MongoDB**. It includes an admin panel for managing blog posts, categories, and user access. The frontend is optimized for users, with a clean interface and responsive design.  
 
-```bash
-npm install
-# or
-yarn install
-# or
-pnpm install
-# or
-bun install
-```
+## Features  
 
+### User Features  
+- Browse and read blog posts.  
+- Search and filter posts by category or keyword.  
+- Fully responsive design for mobile and desktop.  
 
-run the development server:
+### Admin Features  
+- Create, edit, and delete blog posts.  
+- Manage categories.  
+- View and manage users and roles (if applicable).  
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## Technologies Used  
+- **Next.js 14** (React Framework)  
+- **TypeScript** (Strong typing)  
+- **Tailwind CSS** (Styling)  
+- **MongoDB** (Database)  
+- **Mongoose** (MongoDB ORM)  
+- **NextAuth.js** (Authentication and authorization)  
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Prerequisites  
+- Node.js 18+  
+- npm or yarn  
+- A MongoDB database  
